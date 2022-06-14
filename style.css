@@ -1,0 +1,352 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+}
+
+h2 {
+  margin: 2rem 0;
+}
+
+p {
+  margin: 2rem 0;
+}
+
+/* Utilities */
+/* Flex */
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+/* Buttons */
+.btn {
+  background-color: #fd5236;
+  color: #fff;
+  border-radius: 10px;
+  font-size: 1.4rem;
+  padding: 10px;
+  border: none;
+}
+
+.btn:hover {
+  opacity: 0.9;
+  cursor: pointer;
+}
+
+.btn:active {
+  transform: scale(0.95);
+}
+
+/* Navbar */
+#navbar {
+  background-color: #333;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  height: 80px;
+  width: 100%;
+}
+
+#logo {
+  padding: 1rem 0;
+  color: #fff;
+}
+
+#logo span {
+  margin-right: 1rem;
+  color: #fd5236;
+}
+
+/* Hamburger */
+#hamnav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background: black;
+  padding: 2rem;
+}
+
+/* Horizontal Items */
+#hamitems { 
+  display: flex; 
+}
+
+#hamitems a {
+  flex-grow: 1;
+  flex-basis: 0;
+  margin: 0 2rem;
+  padding: 20px;
+  border-radius: 10px;
+  font-size: 1.4rem;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+}
+#hamitems a:hover { background: #fd5236; }
+
+/* Hide hamburger menu */
+#hamnav label, #hamburger { display: none; }
+
+/* Hero Section */
+.hero {
+  flex-direction: column;
+  background: url('https://images.unsplash.com/photo-1622819584099-e04ccb14e8a7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2064&q=80') no-repeat center center/cover;
+  color: #fff;
+  height: 60vh;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin: 2rem 0;
+}
+
+.hero h2 {
+  margin: 2rem 0;
+}
+
+.hero h4 {
+  margin: 2rem 0;
+}
+
+/* Pre-order Section */
+.order-now {
+  background-color: black;
+  color: #fff;
+  height: 100%;
+  padding: 3rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.order-now button {
+  width: 300px;
+  padding: 1rem;
+  font-size: 1.7rem;
+  margin: 3rem;
+  border: none;
+}
+
+.order-now button:hover {
+  opacity: 0.9;
+  cursor: pointer;
+}
+
+.order-now button:active {
+  transform: scale(0.96);
+}
+
+/* Game highlights */
+.game-highlights {
+  display: flex;
+  background-color: #f4f4f4;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  padding: 30px;
+}
+
+.game-highlights img {
+  width: 300px;
+}
+
+.game-highlights p {
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+}
+
+.explore-box,
+.build-box,
+.survive-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 30px;
+}
+
+/* Game Trailer */
+.game-trailer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #013f3e;
+  padding: 30px;
+}
+
+.game-trailer h1 {
+  margin: 2rem 0;
+  color: #fff;
+}
+.game-trailer img {
+  width: 500px;
+  padding: 30px;
+  border-radius: 30px;
+}
+
+.game-trailer img:hover {
+  transform: scale(1.03);
+  cursor: pointer;
+}
+
+/* Footer */
+#footer {
+  background-color: black;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+
+#footer div {
+  margin: 4rem;
+}
+
+#footer ul {
+  display: flex;
+  padding: 20px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#footer ul li {
+  padding: 1rem;
+}
+
+#footer ul li a {
+  color: #fff;
+}
+
+#footer ul li:hover {
+  color: #fd5236;
+  cursor: pointer;
+}
+
+#footer ul li a:hover {
+  color: #fd5236;
+  cursor: pointer;
+}
+
+#footer .social-icons {
+  flex-direction: row;
+}
+
+/* Responsive */
+
+@media screen and (max-width: 768px){
+  /* Hamburger Menu */
+  #hamnav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 0;
+  }
+
+  #hamitems a {
+    box-sizing: border-box;
+    display: block;
+    margin: 0;
+    width: 100%;
+    border-top: 1px solid #fff;
+  }
+ 
+  /* SHOW HAMBURGER ICON */
+  #hamnav label { 
+    display: inline-block; 
+    color: white;
+    background: black;
+    font-style: normal;
+    font-size: 2rem;
+    padding: 10px;
+  }
+
+  /* TOGGLE SHOW/HIDE MENU */
+  #hamitems { 
+    display: none; 
+    width: 100%;
+  
+  }
+  #hamnav input:checked ~ #hamitems { 
+    display: block;
+   }
+
+   /* Hero */
+   .hero {
+    width: 100%;
+    padding: 2rem;
+    text-align: center;
+    height: 100%;
+   }
+
+   /* Order-now */
+   .order-now {
+    height: 100%;
+   }
+
+   /* Game Highlights */
+
+   .game-highlights {
+    flex-direction: column;
+    height: 100%;
+   }
+
+   .build-box,
+   .survive-box {
+    border-top: 1px solid #333;
+    width: 100%;
+    margin: 2rem 0;
+   }
+
+
+   /* Game Trailer */
+   .game-trailer img {
+    width: 300px;
+   }
+
+   /* Footer */
+
+   #footer {
+    flex-direction: column;
+   }
+
+   #footer div {
+    margin: 0;
+   }
+}
